@@ -7,6 +7,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -38,6 +39,11 @@ Users should be able to:
 ![](./design/case-study--country-picker-search-light.png)
 
 ![](./design/case-study--country-picker-details-light.png)
+
+### Links
+
+- Solution URL: [Repository Link](https://github.com/mjclaypool/REST-Countries-API)
+- Live Site URL: [Live Link](https://mjclaypool.github.io/REST-Countries-API/)
 
 ## My process
 
@@ -116,4 +122,5 @@ I also practiced using the popular CSS framework, Tailwind CSS, to bolster maint
 
 ## Author
 
+- Website - [Mallory Claypool](https://mjclaypool.github.io/Personal-Portfolio/)
 - Frontend Mentor - [@mjclaypool](https://www.frontendmentor.io/profile/mjclaypool)
