@@ -22,22 +22,22 @@ export default function CountryCard( {country} ) {
       }
     >
       <img
-        id="country-card-flag"
+        id={`${country.name.common} flag`}
         className="w-full h-48 object-cover rounded-t-md"
         src={country.flags.png}
         alt={`${country.name.common} flag`}
       />
-      <div id="country-card-overview" className="my-auto px-8">
+      <div id={`${country.name.common} overview`} className="my-auto px-8">
         <h2 id="country-card-name" className="font-nunito text-2xl mb-4">
           {country.name.common}
         </h2>
-        <h3 id="country-card-population" className="font-nunito text-base my-1">
+        <h3 id={`${country.name.common} population`} className="font-nunito text-base my-1">
           Population: {formattedPopulation}
         </h3>
-        <h3 id="country-card-region" className="font-nunito text-base my-1">
+        <h3 id={`${country.name.common} region`} className="font-nunito text-base my-1">
           Region: {country.region}
         </h3>
-        <h3 id="country-card-capital" className="font-nunito text-base my-1">
+        <h3 id={`${country.name.common} capital`} className="font-nunito text-base my-1">
           Capital: {country.capital}
         </h3>
       </div>

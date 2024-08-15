@@ -20,6 +20,7 @@ export default function SearchBar() {
   return (
     <div
       id="search-bar"
+      aria-label="Search bar element"
       className={darkModeCtx.mode == 'Dark Mode' ?
         `flex h-[50px] w-[100%] lg:w-[600px] rounded-md shadow-md
         bg-dark-theme-elem text-dark-theme-txt`
@@ -32,15 +33,17 @@ export default function SearchBar() {
         id="search-bar-icon"
         className="my-auto px-5"
         icon={faMagnifyingGlass}
+        alt="Search icon, magnifying glass from FontAwesome"
       />
       <form className="flex w-full h-full" onSubmit={handleSubmit}>
         <input
           type="search"
+          id="search-bar-input"
+          aria-label="Search bar input field"
           onChange={handleChange}
           value={filterCtx.activeSearch}
           placeholder='Search for a country...'
           autoComplete='off'
-          id="search-bar-input"
           className={darkModeCtx.mode == 'Dark Mode' ?
             `font-nunito text-base border-none rounded-md w-full
             bg-dark-theme-elem text-dark-theme-txt`
