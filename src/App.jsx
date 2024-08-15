@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { FilterContextProvider } from './store/FilterContext';
 import { DarkModeContextProvider } from './store/DarkModeContext';
 import RootLayout from './pages/Root';
 import HomePage from './pages/HomePage';
 import CountryDetails from './components/CountryDetails';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <RootLayout />,
