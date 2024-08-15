@@ -16,7 +16,6 @@ export default function FilterBar() {
   return (
     <div
       id="filter-bar"
-      aria-label="Filter bar element"
       className={darkModeCtx.mode == 'Dark Mode' ?
         `relative h-[50px] w-[200px] rounded-md shadow-md
         bg-dark-theme-elem text-dark-theme-txt`
@@ -42,11 +41,11 @@ export default function FilterBar() {
           >
             <optgroup className="font-nunito text-base">
               <option className="hidden" value="">Filter by Region</option>
-              <option value="Africa" aria-label="Africa option">Africa</option>
-              <option value="Americas" aria-label="Americas option">America</option>
-              <option value="Asia" aria-label="Asia option">Asia</option>
-              <option value="Europe" aria-label="Europe option">Europe</option>
-              <option value="Oceania" aria-label="Oceania option">Oceania</option>
+              <option value="Africa">Africa</option>
+              <option value="Americas">America</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
             </optgroup>
           </select>
       </form>
@@ -54,7 +53,6 @@ export default function FilterBar() {
         id="filter-bar-icon"
         className="absolute top-1/3 right-5 pointer-events-none"
         icon={faAngleDown}
-        alt="Down caret icon, angle down from FontAwesome"
       />
     </div>
   )
