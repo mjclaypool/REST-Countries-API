@@ -8,7 +8,7 @@ export default function FilterSearch() {
   const darkModeCtx = useContext(DarkModeContext);
 
   return (
-    <div
+    <section
       id="search-filter-region"
       className={darkModeCtx.mode == 'Dark Mode' ?
         `flex flex-col justify-between h-[12vh] lg:flex-row lg:items-center lg:gap-8 py-5 px-8 md:px-16 lg:px-32
@@ -19,6 +19,6 @@ export default function FilterSearch() {
     >
       <SearchBar />
       <FilterBar />
-    </div>
+    </section>
   )
 }

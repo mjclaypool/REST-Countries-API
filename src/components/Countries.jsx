@@ -8,12 +8,12 @@ export default function Countries() {
   const darkModeCtx = useContext(DarkModeContext);
 
   return (
-    <div
+    <section
       id="countries-section-background"
       className={darkModeCtx.mode == 'Dark Mode' ?
-        `h-[80vh] w-full px-8 md:px-16 lg:px-32 bg-dark-theme-bg text-dark-theme-txt`
+        `h-full w-full px-8 md:px-16 lg:px-32 bg-dark-theme-bg text-dark-theme-txt`
         :
-        `h-[80vh] w-full px-8 md:px-16 lg:px-32 bg-light-theme-bg text-light-theme-txt`
+        `h-full w-full px-8 md:px-16 lg:px-32 bg-light-theme-bg text-light-theme-txt`
       }
     >
       <div
@@ -33,6 +33,6 @@ export default function Countries() {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

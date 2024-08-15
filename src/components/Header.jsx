@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   return (
-    <div
+    <header
       id='header-section'
       className={darkModeCtx.mode == 'Dark Mode' ?
         `flex items-center justify-between gap-8 h-[8vh] px-8 md:px-16 lg:px-32
@@ -40,6 +40,6 @@ export default function Header() {
         <FontAwesomeIcon icon={faMoon} id="mode-icon" className="pr-2" />
         {darkModeCtx.mode}
       </button>
-    </div>
+    </header>
   )
 }

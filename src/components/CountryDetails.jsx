@@ -76,7 +76,7 @@ export default function CountryDetails() {
 
 
   return (
-    <div
+    <section
       id="country-details-section"
       className={darkModeCtx.mode == 'Dark Mode' ?
         `flex flex-col h-[92vh] px-8 md:px-16 lg:px-32
@@ -164,6 +164,6 @@ export default function CountryDetails() {
           </div>
         </div>
       }
-    </div>
+    </section>
   )
 }

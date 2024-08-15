@@ -25,6 +25,7 @@ export default function CountryCard( {country} ) {
         id="country-card-flag"
         className="w-full h-48 object-cover rounded-t-md"
         src={country.flags.png}
+        alt={`${country.name.common} flag`}
       />
       <div id="country-card-overview" className="my-auto px-8">
         <h2 id="country-card-name" className="font-nunito text-2xl mb-4">
