@@ -14,19 +14,19 @@ export default function CountryCard( {country} ) {
     <Link
       to={`/${country.name.common}`}
       className={darkModeCtx.mode == 'Dark Mode' ?
-        `flex flex-col w-80 h-96 rounded-md cursor-pointer shadow-md no-underline
+        `flex flex-col w-60 h-80 rounded-md cursor-pointer shadow-md no-underline
         bg-dark-theme-elem text-dark-theme-txt`
         :
-        `flex flex-col w-80 h-96 rounded-md cursor-pointer shadow-md no-underline
+        `flex flex-col w-60 h-80 rounded-md cursor-pointer shadow-md no-underline
         bg-light-theme-elem text-light-theme-txt`
       }
     >
       <img
-        className="w-full h-48 object-cover rounded-t-md"
+        className="w-full h-36 object-cover rounded-t-md"
         src={country.flags.png}
         alt={`${country.name.common} flag`}
       />
-      <div className="my-auto px-8">
+      <div className="my-auto px-6">
         <h2 className="font-nunito text-2xl mb-4">
           {country.name.common}
         </h2>
